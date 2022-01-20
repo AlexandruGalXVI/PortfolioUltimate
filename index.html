@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage</title>
+    <link rel="shortcut icon" type="Images/png" href="Images/favicon.png">
+  </head>
+  <body>
+    <section class='showcase  '>
+      <header>
+        <h2 class='logo'><a href="index.html">Alexandru Gal</h2></a>
+        <div class="toggle  "></div>
+      </header>
+    <Video src="Video/videobg.mp4" muted loop autoplay></Video>
+
+      <div class="overlay">
+        <div class="text">
+          <h2>Hello, my name is Alexandru</h2>
+          <h3>And I'm a CREATIVE!</h3>
+          <p>A graphic designer, videomaker and a web developer!</p>
+        <a href="AboutMe.html">About Me</a>
+          </div>
+        </div>
+        <ul class='social'>
+          <li><a href="https://www.youtube.com/channel/UCPA-i_Rko_aElHmflDJdx7w" target="_blank"><img  src="Images/logoyoutube.png" alt=""></li></a>
+          <li><a href="https://www.instagram.com/sonoalecs/" target="_blank"><img  src="Images/logoinstagram.png" alt=""></li></a>
+          <li><a href="https://twitter.com/ALEXGAL58558001" target="_blank"><img  src="Images/logotwitter.png" alt=""></li></a>
+          <li><a href="https://www.facebook.com/ale.gal.31" target="_blank"><img  src="Images/logofacebook.png" alt=""></li></a>
+        </ul>
+
+        </section>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutMe.html">About</li></a>
+            <li><a href="MySkills.html">MySkills</li></a>
+            <li><a href="ContactMe.html">ContactMe</li></a>
+          </ul>
+
+        </div>
+        <script>
+          const menuToggle = document.querySelector('.toggle');
+          const showcase=document.querySelector('.showcase');
+          menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+          } )
+        </script>
+  </body>
+</html>
